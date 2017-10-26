@@ -2,6 +2,8 @@ $(document).ready(function() {
 
 	var elem = document.querySelector(".promo")
 	var h = elem.offsetHeight;
+	var footer = document.querySelector("footer")
+	var ft = footer.offsetHeight;
 
 	$(window).scroll(function() {
        	if ($(this).scrollTop() > h) {
@@ -9,22 +11,44 @@ $(document).ready(function() {
        		} else {
 	           $('.header_fixed').removeClass('fixed');
 	       }
+	    if ($(this).scrollTop() + $(window).height() > ft) {
+           $('.footer_fixed').removeClass('hidden');
+       		} else {
+	           $('.footer_fixed').addClass('hidden');
+	       }   
 	});
 
-	var ev_menu = document.querySelector(".everest_menu a")
-	var ev_popup = document.querySelector(".everest_popap")
+	// let  scrollBottom = function(){ 
+	// 	return $(window).scrollTop() + $(window).height(); 
+	// };
+
+
+	// function getDocHeight() 
+	// {
+ //    var D = document;
+ //    return Math.max(
+ //        Math.max(D.body.scrollHeight, D.documentElement.scrollHeight),
+ //        Math.max(D.body.offsetHeight, D.documentElement.offsetHeight),
+ //        Math.max(D.body.clientHeight, D.documentElement.clientHeight)
+ //    );
+	// }
 
 
 
-	if ($(".everest_menu a").length > 0) {
+	// var ev_menu = document.querySelector(".everest_menu a")
+	// var ev_popup = document.querySelector(".everest_popap")
 
-		ev_menu.addEventListener("click", function(event) {
-	    event.preventDefault(); //отмена стандартного дейстивия
-	    ev_popup.classList.toggle("ev_popup_show"); //добавляем класс 
-	    ev_menu.classList.toggle("selected")
-	})
 
-	}
+
+	// if ($(".everest_menu a").length > 0) {
+
+	// 	ev_menu.addEventListener("click", function(event) {
+	//     event.preventDefault(); //отмена стандартного дейстивия
+	//     ev_popup.classList.toggle("ev_popup_show"); //добавляем класс 
+	//     ev_menu.classList.toggle("selected")
+	// })
+
+	// }
 
 
 	var button_left = document.querySelector(".open_left_menu")

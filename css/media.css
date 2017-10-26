@@ -26,7 +26,7 @@
 	    width: 132px;
 	}
 	.header_main .logo {
-	    width: 132px;
+	    min-width: 132px;
 	    margin-left: 0px;
 	}
 	.head_check a {
@@ -46,7 +46,7 @@
 	    margin-bottom: 203px;
 	}
 	.promo_content {
-	    margin-left: 17.2017%;
+	    margin-left: 12.1017%;
 		padding-bottom: 254px;
 	}
 	.main_title {
@@ -61,16 +61,33 @@
    		max-width: 699px;
 	    margin-top: 48px;
 	}
-	.everest_menu a {
+/*	.everest_menu a {
 	    width: 21.9587%;
 	    width: 213px;
 		font-size: 22px;
    		padding: 15px 45px;
     	padding-right: 30px;
 	    margin-right: 5px;
+	}*/
+	.everest_menu a {
+    /* width: 21.9587%; */
+    /* width: 213px; */
+    /* font-size: 22px; */
+    /* padding: 15px 45px; */
+    /* padding-right: 30px; */
+    /* margin-right: 5px; */
+}
+	.ev1 {
+    	min-width: 212px;
+    }
+    .everest_menu a {
+   		display: inline-block;
+   		color: #129fd4;
+    	padding: 12px;
+    	padding-left:50px;
 	}
 	.everest_popap {
-    	bottom: 228px;
+    	bottom: 94px;
     	width: 376px;
 		padding: 24px 10px;
 	}
@@ -305,10 +322,25 @@
     	left: -21px;
 	}
 	.resid_feature_6 .right:before {
-    	top: 29px;
+    	top: 2	9px;
     	left: -29px;
 	}
-
+	.everest_popap a {
+	    color: #414141;
+	    font-size: 16px;
+	    padding: 3px;
+	    padding-left: 15px;
+	    width: 100%;
+	}
+	.everest_popap {
+    	bottom: unset; 
+    }
+    .ev1:hover .ev_pop_open:after {
+    	right: 44px;
+	}
+	.everest_menu li:last-child .everest_popap {
+	    left: -164px;
+	}
 
 }	
 
@@ -376,7 +408,8 @@
    	 	max-width: 532px;
 	}
 	.everest_menu a {
-	    margin-right: 5px;
+	    margin-right: 0;
+		padding: 11px 21px;
 	}
 	.partners .partners_list li:nth-last-child(2) {
 		display: none;
@@ -478,8 +511,8 @@
 	    font-size: 26px;
 	}
 	.img_how img {
-	    margin-left: 30px;
-	    margin-top: 11px;
+		margin-left: 0;
+    	margin-top: 11px;
 	}
 	header {
 	    margin-bottom: 233px;
@@ -489,7 +522,7 @@
     	padding-bottom: 2px;
 	}
 	header .feedcall {
-	    right: 13px;
+		right: 20px;
 	}
 	.everest_menu {
 	    margin-top: 2px;
@@ -556,8 +589,9 @@
 	    display: flex;
 	}
 	.head_check {
-		width: 300px;
-	    flex-direction: row;
+    	width: 350px;
+    	flex-direction: row;
+    	justify-content: flex-end;
 	}
 	.header_main .logo {
 	    min-width: 110px;
@@ -567,7 +601,7 @@
 	    width: 110px;
 	}
 	.head_check a {
-	    width: 100%;
+	    width: 157px;
 	}
 	.ev2_header .head_nav {	
 		padding-left: 15px;
@@ -581,14 +615,14 @@
 	    margin: 0 auto;
 	}
 	.promo_content {
-	    margin-left: 35.0666%;
+	    margin-left: 27.0666%;
 	}
 	.heaf_nav_left {
 		display: block;
 	}
 	.menu_left {
         left: -90px;
-    	top: -49.325%;
+		top: -48.325%;
     	width: 268px;
 	}
 	.menu_left:after {
@@ -599,12 +633,16 @@
     	padding-bottom: 0;
 	}
 	.menu_left ul {
-    	margin-top: 40px;
-    	margin-left: 100px;
+	    padding-top: 40px;
+	    margin-top: 0;
+    	margin-left: 80px;
 	}	
-	.menu_left p {
-	    margin-bottom: 90px;
-	    margin-left: 100px;
+	.menu_left p {   
+		padding-bottom: 102px;
+	    margin-bottom: 0;
+	    margin-left: 105px;
+	    visibility: visible;
+    	opacity: 1;
 	}
 	.ev2_promo .menu_left p {
 	    margin-bottom: 222px;
@@ -629,11 +667,46 @@
     	visibility: visible;
     	opacity: 1;
 	}
-	.menu_left p {
-    	visibility: visible;
-    	opacity: 1;
+	.more_inf_bg_1 {
+	    width: 100%;
+	    padding-left: 30px;
+	    margin-left: 0px;
 	}
-
+	.more_inf_bg_2 {
+    	width: 100%;
+		background: rgba(12,129,174, 0.4);
+	}
+	.menu_left .full_left_bg {
+	    margin-left: 105px;
+	}
+	.ev1 {
+	    min-width: 157px;
+	}
+	.ev1:hover .ev_pop_open {
+	    margin-right: 0;
+		padding: 11px 16px;
+	}
+	.ev1:hover .ev_pop_open:after {
+	    right: 23px;
+	}
+	.everest_menu li:last-child .everest_popap {
+	    left: -188px;
+	}
+	.everest_popap a {
+	    color: #414141;
+	    font-size: 16px;
+	    padding: 3px;
+	    padding-left: 15px;
+	    width: 100%;
+	}
+	.everest_menu a:after {
+		top: 25px;
+	    right: 18px;
+	}
+	.ev1:hover .ev_pop_open:after {
+    	right: 23px;
+    	top: 25px;
+	}
 }
 
 
@@ -646,20 +719,31 @@
     	margin-bottom: 115px;
 	}
 	.everest_menu a {
- 	    margin-bottom: 11px;
+ 	    margin-bottom: 0;
     }
     .everest_menu {
    		flex-direction: column;
    		align-items: flex-start;
     	margin-left: 64px;
+    	margin-bottom: 180px;
 	}
-    .everest_popap{
-		position: relative;
-    	left: 221px;
-/*		display: flex;*/
-		flex-direction: column;
-		align-items: center;
-		width: 188px;
+	.everest_popap li {
+	    padding-bottom: 0;
+	}
+    .everest_popap {
+	    position: absolute;
+	    left: 157px;
+	    top: 0;
+	    flex-direction: column;
+	    align-items: center;
+	    width: 188px;
+	    z-index: 99;
+	}
+	.everest_menu li:last-child .everest_popap {
+	    left: 157px;
+	}
+		.everest_menu li:last-child .everest_popap:after {
+	    left: -20px;
 	}
 	.everest_popap .right a,
 	.everest_popap .left a{
@@ -677,14 +761,15 @@
 	.menu_left ul {
    		margin-top: 0; 
      	margin-left: 0; 
+		padding-top: 40px;
 	}
 	.menu_left {
 		display: flex;
     	position: relative;
    		justify-content: space-around;
    		width: 100%;
-    	padding-top: 35px;
-    	padding-bottom: 35px;
+    	padding-top: 0;
+    	padding-bottom: 0;
     	left: 0;
 		margin-top: -180px;
 	}
@@ -729,7 +814,7 @@
 		flex-wrap: wrap;
 	}	
 	.header_popup_show {
-		top: 59px;
+		top: 56px;
 	}
 	.header_popup_container {
 		display: block;
@@ -746,22 +831,50 @@
 	.ev2_promo header {
     	margin-bottom: 110px;
 	}
-
+	.head_check {
+    	min-width: 337px;
+	}
+	.header_main .head_check a {
+	    margin-right: 15px;
+	}
+	.main_title {
+	    white-space: normal;
+	}
+	.main_title h1 {
+	    font-size: 40px;
+	    line-height: 40px;
+	    margin-top: 20px;
+	}
+	.main_feedback_content {
+		flex-direction: column;
+		align-items: center;
+  	}
+  	.feedcall_discr {
+    	width: 170px;
+    	margin: 0;
+	}
+	.feed_back {
+	    margin-top: 30px;
+	}
+	.menu_left .full_left_bg {
+	    margin-left: 25px;
+	}
+	.everest_menu .ev_pop_open {
+    	margin-bottom: 0;
+		font-size: 22px;
+	}
 }	
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-.container {
+/*.container {
 	width: 94%;
-}
+}*/
 .head_check {
     width: 300px;
     flex-direction: column;
 }
 .header_main .logo {
     min-width: 110px;
-}
-.head_check {
-    width: 150px;
 }
 .header_main .logo {
     min-width: 96px;
@@ -854,15 +967,19 @@ iframe {
 }
 .everest_menu {
     margin-left: 0;
+    margin-bottom: 200px;
 }
-.everest_popap {
-    left: 116px;
-	width: 170px;
-}
+/*.everest_popap {
+    left: 133px;
+    width: 150px;
+    bottom: 303px;
+    z-index: 99;
+    font-size: 14px;
+}*/
 .menu_left {
     margin-left: -20px;
-    width: 116%;
-	padding: 35px 15px;	
+    width: 110%;
+/*	padding: 35px 15px;	*/
 }
 .menu_left a {
     font-size: 16px;
@@ -886,7 +1003,6 @@ iframe {
 }
 .promo_content {
     margin: 0;
-	margin-left: -15px;
 }
 .everest_menu a.selected {
     width: 150px;
@@ -897,12 +1013,23 @@ iframe {
 	transform: rotate(-90deg);
 }
 .everest_menu a:after {
-	right: 10px;
+	right: 23px;
 	transform: rotate(-90deg);
 }
+.everest_popap li a {
+    padding: 2px 20px;
+}
+.everest_popap {
+    padding: 5px 10px;
+	left: 132px;
+	width: 170px;
+}
+.everest_menu li:last-child .everest_popap {
+    left: 132px;
+}
 .everest_menu a {
-    width: 118px;
-    padding: 15px 16px;
+    width: 100%;
+    padding: 11px 16px;
 }
 .header_main .head_check a {
     padding: 0; 
@@ -914,7 +1041,8 @@ iframe {
     font-size: 23px;
 	}
    .head_check {
-	    width: 110px;
+    	min-width: 110px;
+    	width: 115px;
 	}
 	.dcr_block {
 		width: 265px;
@@ -935,7 +1063,7 @@ iframe {
 	.condition_discribe {
 	    padding-top: 32px;
 	    width: 121%;
-	    margin-left: -25px; 
+	    margin-left: -13px;
 	}
 	.dcr_block .title {
     	font-size: 30px;
@@ -1126,11 +1254,24 @@ iframe {
 	.doc_content li {
     	padding-left: 11px;
 	}
+	.more_inf_bg_1 {
+	    width: 50%;
+	}
+	.more_inf_bg_2 {
+		width: 50%;
+    	padding-left: 0;
+	}
+	.menu_left .full_left_bg {
+	    margin-left: 15px;
+	}
+	.ev1 {
+	    min-width: 132px;
+	}
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-.container {
+/*.container {
 	max-width: 290px;
 	padding: 0 10px;
-}
+}*/
 }
